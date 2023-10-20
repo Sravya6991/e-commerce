@@ -1,0 +1,133 @@
+#root {
+  position: relative;
+  min-height: 110vh;
+}
+
+.card {
+  width: 100%;
+  height: 22em;
+  box-shadow: 0.5px 0.2px 5px rgba(23, 45, 27, 0.4);
+}
+
+.card-image {
+  width: 100%;
+  height: 75%;
+  padding: 10px;
+  border-bottom: 1px solid rgba(23, 45, 27, 0.4);
+}
+
+.card-body {
+  height: 30%;
+  font-size: 16px;
+  padding: 10px;
+  margin: 0;
+}
+
+.card-text {
+  margin-bottom: 5px;
+}
+
+.price {
+  color: darkblue;
+}
+
+/* category css */
+
+.category {
+  padding: 10px 15px;
+  width: 85%;
+  text-align: center;
+  position: relative;
+}
+
+.category-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.label {
+  padding: 10px;
+  margin: 5px;
+}
+
+.label:hover {
+  cursor: pointer;
+  background-color: rgba(36, 16, 61, 0.8);
+  color: white;
+}
+
+/* product description */
+.product-category {
+  border: 1px solid rgba(58, 146, 74, 0.4);
+  background-color: rgba(23, 45, 27, 0.8);
+  color: white;
+  border-radius: 50px;
+  width: 50%;
+  text-align: center;
+}
+
+.rating {
+  border: 1px solid rgba(244, 244, 244, 0.3);
+  width: 75%;
+  padding: 10px 15px;
+  border-radius: 25px;
+  background-color: rgba(244, 244, 244, 0.97);
+  justify-content: space-between
+}
+.product-descript h4 {
+  color: rgba(23, 45, 27, 0.8);
+  font-weight: bold;
+}
+
+/* single product css */
+
+.product-image {
+  width: 20em;
+  height: 22em;
+  border: 1px solid;
+  padding: 10px 15px;
+}
+
+/* login/signup */
+.form {
+  width: 50%;
+  padding: 10px 15px;
+}
+
+#footer {
+  background-color: rgb(43, 31, 31);
+  position: absolute;
+  bottom: -4em;
+  color: white;
+  width: 100%;
+  padding: 15px;
+  text-align: center;
+}
+
+
+@media screen and (max-width: 556px) {
+  .category-list {
+    flex-direction: column;
+  }
+  .product {
+    text-align: -webkit-center;
+  }
+  .product-category {
+    margin: 10px auto;
+  }
+  .product-descript {
+    text-align: center;
+  }
+  .product-descript h5 {
+    text-align: left;
+  }
+  .table {
+    overflow-x: scroll;
+  }
+  .form {
+    width: 100%;
+  }
+  
+}
